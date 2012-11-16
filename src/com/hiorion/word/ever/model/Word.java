@@ -1,4 +1,4 @@
-package model;
+package com.hiorion.word.ever.model;
 
 import java.util.Date;
 

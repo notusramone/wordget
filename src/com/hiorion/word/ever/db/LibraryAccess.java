@@ -4,7 +4,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-import model.Word;
+import com.hiorion.word.ever.model.Word;
+
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;

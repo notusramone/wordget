@@ -1,7 +1,6 @@
 package com.hiorion.word.ever;
 
 
-import model.Word;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
@@ -12,6 +11,7 @@ import android.widget.SimpleCursorAdapter;
 
 import com.hiorion.word.ever.db.WordAccess;
 import com.hiorion.word.ever.db.DBschema;
+import com.hiorion.word.ever.model.Word;
 import com.markupartist.android.widget.ActionBar;
 import com.markupartist.android.widget.ActionBar.Action;
 import com.markupartist.android.widget.ActionBar.IntentAction;

@@ -1,8 +1,8 @@
 package com.hiorion.word.ever;
 
-import model.Word;
 
 import com.hiorion.word.ever.db.WordAccess;
+import com.hiorion.word.ever.model.Word;
 
 import android.app.Activity;
 import android.content.Intent;
