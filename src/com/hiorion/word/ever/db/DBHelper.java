@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-public class DBschema extends SQLiteOpenHelper {
+public class DBHelper extends SQLiteOpenHelper {
 	
 	public static final String TABLE_Word = "word";
 	  public static final String TABLE_Category="category";
@@ -52,7 +52,6 @@ public class DBschema extends SQLiteOpenHelper {
 	      + COLUMN_Word_ID + " integer primary key autoincrement, " 
 	      + COLUMN_Word_Word + "  text not null, " 
 	      + COLUMN_Word_Library_ID + "  integer, "
-	      //+ COLUMN_Word_Category_ID + "  integer not null, "
 	      + COLUMN_Word_OgSource + "  text, "
 	      + COLUMN_Word_OgSentence + "  text, "
 	      + COLUMN_Word_OgSourcePhoto + "  text, "
@@ -88,7 +87,7 @@ public class DBschema extends SQLiteOpenHelper {
 	      + COLUMN_Word_Example_Example_ID + " integer  not null);";
 	  
 	  
-	  public DBschema(Context context) {
+	  public DBHelper(Context context) {
 	    super(context, DATABASE_NAME, null, DATABASE_VERSION);
 	  }
 

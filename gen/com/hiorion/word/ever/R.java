@@ -9,6 +9,53 @@ package com.hiorion.word.ever;
 
 public final class R {
     public static final class attr {
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int dragndrop_background=0x7f010003;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int expanded_height=0x7f010001;
+        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+         */
+        public static final int grabber=0x7f010002;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int normal_height=0x7f010000;
+        /** <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>-1</td><td></td></tr>
+<tr><td><code>fling</code></td><td>0</td><td></td></tr>
+<tr><td><code>slide</code></td><td>1</td><td></td></tr>
+<tr><td><code>slideRight</code></td><td>1</td><td></td></tr>
+<tr><td><code>slideLeft</code></td><td>2</td><td></td></tr>
+</table>
+         */
+        public static final int remove_mode=0x7f010004;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -16,20 +63,20 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int title=0x7f010000;
+        public static final int title=0x7f010005;
     }
     public static final class color {
-        public static final int actionbar_background_end=0x7f040003;
-        public static final int actionbar_background_item_pressed_end=0x7f040005;
-        public static final int actionbar_background_item_pressed_start=0x7f040004;
-        public static final int actionbar_background_start=0x7f040002;
-        public static final int actionbar_separator=0x7f040000;
-        public static final int actionbar_title=0x7f040001;
+        public static final int actionbar_background_end=0x7f050003;
+        public static final int actionbar_background_item_pressed_end=0x7f050005;
+        public static final int actionbar_background_item_pressed_start=0x7f050004;
+        public static final int actionbar_background_start=0x7f050002;
+        public static final int actionbar_separator=0x7f050000;
+        public static final int actionbar_title=0x7f050001;
     }
     public static final class dimen {
-        public static final int actionbar_height=0x7f050000;
-        public static final int actionbar_item_height=0x7f050001;
-        public static final int actionbar_item_width=0x7f050002;
+        public static final int actionbar_height=0x7f060000;
+        public static final int actionbar_item_height=0x7f060001;
+        public static final int actionbar_item_width=0x7f060002;
     }
     public static final class drawable {
         public static final int actionbar_back_indicator=0x7f020000;
@@ -37,81 +84,111 @@ containing a value of this type.
         public static final int actionbar_btn=0x7f020002;
         public static final int actionbar_btn_normal=0x7f020003;
         public static final int actionbar_btn_pressed=0x7f020004;
-        public static final int content_new=0x7f020005;
-        public static final int ic_action_search=0x7f020006;
-        public static final int ic_launcher=0x7f020007;
-        public static final int icon=0x7f020008;
+        public static final int content_discard=0x7f020005;
+        public static final int content_edit=0x7f020006;
+        public static final int content_new=0x7f020007;
+        public static final int ic_action_search=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int icon=0x7f02000a;
     }
     public static final class id {
-        public static final int ScrollView01=0x7f09000c;
-        public static final int actionbar=0x7f09000a;
-        public static final int actionbar_actions=0x7f090006;
-        public static final int actionbar_home=0x7f090001;
-        public static final int actionbar_home_bg=0x7f090003;
-        public static final int actionbar_home_btn=0x7f090004;
-        public static final int actionbar_home_is_back=0x7f090005;
-        public static final int actionbar_home_logo=0x7f090002;
-        public static final int actionbar_item=0x7f090009;
-        public static final int actionbar_progress=0x7f090007;
-        public static final int actionbar_title=0x7f090008;
-        public static final int btn_add=0x7f090019;
-        public static final int et_example1=0x7f090016;
-        public static final int et_example2=0x7f090017;
-        public static final int et_extrainfo=0x7f090018;
-        public static final int et_meaning=0x7f090010;
-        public static final int et_ogsentence=0x7f090014;
-        public static final int et_word=0x7f09000e;
-        public static final int menu_settings=0x7f09001b;
-        public static final int rowTextView=0x7f09001a;
-        public static final int screen=0x7f090000;
-        public static final int spin_library=0x7f090012;
-        public static final int textView1=0x7f09000d;
-        public static final int textView3=0x7f090013;
-        public static final int textView4=0x7f090015;
-        public static final int textView5=0x7f090011;
-        public static final int textView6=0x7f09000f;
-        public static final int wordlist=0x7f09000b;
+        public static final int ScrollView01=0x7f040011;
+        public static final int actionbar=0x7f04000f;
+        public static final int actionbar_actions=0x7f04000b;
+        public static final int actionbar_home=0x7f040006;
+        public static final int actionbar_home_bg=0x7f040008;
+        public static final int actionbar_home_btn=0x7f040009;
+        public static final int actionbar_home_is_back=0x7f04000a;
+        public static final int actionbar_home_logo=0x7f040007;
+        public static final int actionbar_item=0x7f04000e;
+        public static final int actionbar_progress=0x7f04000c;
+        public static final int actionbar_title=0x7f04000d;
+        public static final int btn_add=0x7f04001e;
+        public static final int dis_tv_example1=0x7f040024;
+        public static final int dis_tv_example2=0x7f040025;
+        public static final int dis_tv_extrainfo=0x7f040023;
+        public static final int dis_tv_library=0x7f040021;
+        public static final int dis_tv_meaning=0x7f040020;
+        public static final int dis_tv_ogsentence=0x7f040022;
+        public static final int dis_tv_word=0x7f04001f;
+        public static final int edit_et_example1=0x7f040029;
+        public static final int edit_et_example2=0x7f04002a;
+        public static final int edit_et_extrainfo=0x7f04002b;
+        public static final int edit_et_meaning=0x7f040027;
+        public static final int edit_et_ogsentence=0x7f040028;
+        public static final int edit_et_word=0x7f040026;
+        public static final int et_example1=0x7f04001b;
+        public static final int et_example2=0x7f04001c;
+        public static final int et_extrainfo=0x7f04001d;
+        public static final int et_meaning=0x7f040015;
+        public static final int et_ogsentence=0x7f040019;
+        public static final int et_word=0x7f040013;
+        public static final int fling=0x7f040001;
+        public static final int menu_settings=0x7f04002d;
+        public static final int none=0x7f040000;
+        public static final int rowTextView=0x7f04002c;
+        public static final int screen=0x7f040005;
+        public static final int slide=0x7f040002;
+        public static final int slideLeft=0x7f040004;
+        public static final int slideRight=0x7f040003;
+        public static final int spin_library=0x7f040017;
+        public static final int textView1=0x7f040012;
+        public static final int textView3=0x7f040018;
+        public static final int textView4=0x7f04001a;
+        public static final int textView5=0x7f040016;
+        public static final int textView6=0x7f040014;
+        public static final int wordlist=0x7f040010;
     }
     public static final class layout {
         public static final int actionbar=0x7f030000;
         public static final int actionbar_item=0x7f030001;
         public static final int activity_main=0x7f030002;
         public static final int activity_word_add=0x7f030003;
-        public static final int wordrow=0x7f030004;
+        public static final int activity_word_display=0x7f030004;
+        public static final int activity_word_edit=0x7f030005;
+        public static final int wordrow=0x7f030006;
     }
     public static final class menu {
-        public static final int activity_main=0x7f080000;
-        public static final int activity_word_add=0x7f080001;
+        public static final int activity_main=0x7f090000;
+        public static final int activity_word_add=0x7f090001;
+        public static final int activity_word_display=0x7f090002;
+        public static final int activity_word_edit=0x7f090003;
     }
     public static final class string {
-        public static final int actionbar_activity_not_found=0x7f060002;
-        public static final int add_activity_addit=0x7f060011;
-        public static final int add_activity_extrainfo=0x7f060012;
-        public static final int add_activity_extrainfo_hint=0x7f060013;
-        public static final int add_activity_library=0x7f06000b;
-        public static final int add_activity_meaning=0x7f060009;
-        public static final int add_activity_meaning_hint=0x7f06000a;
-        public static final int add_activity_moreexamples=0x7f06000e;
-        public static final int add_activity_moreexamples_hint1=0x7f06000f;
-        public static final int add_activity_moreexamples_hint2=0x7f060010;
-        public static final int add_activity_ogsentence=0x7f06000c;
-        public static final int add_activity_ogsentence_hint=0x7f06000d;
-        public static final int add_activity_theword=0x7f060007;
-        public static final int add_activity_theword_hint=0x7f060008;
-        public static final int app_name=0x7f060001;
-        public static final int hello=0x7f060000;
-        public static final int hello_world=0x7f060003;
-        public static final int menu_settings=0x7f060004;
-        public static final int title_activity_main=0x7f060005;
-        public static final int title_activity_word_add=0x7f060006;
+        public static final int actionbar_activity_not_found=0x7f070002;
+        public static final int add_activity_addit=0x7f070014;
+        public static final int add_activity_extrainfo=0x7f070015;
+        public static final int add_activity_extrainfo_hint=0x7f070016;
+        public static final int add_activity_library=0x7f07000e;
+        public static final int add_activity_meaning=0x7f07000c;
+        public static final int add_activity_meaning_hint=0x7f07000d;
+        public static final int add_activity_moreexamples=0x7f070011;
+        public static final int add_activity_moreexamples_hint1=0x7f070012;
+        public static final int add_activity_moreexamples_hint2=0x7f070013;
+        public static final int add_activity_ogsentence=0x7f07000f;
+        public static final int add_activity_ogsentence_hint=0x7f070010;
+        public static final int add_activity_theword=0x7f07000a;
+        public static final int add_activity_theword_hint=0x7f07000b;
+        public static final int app_name=0x7f070001;
+        public static final int delete_alert_cancel=0x7f070009;
+        public static final int delete_alert_confirm=0x7f070008;
+        public static final int delete_alert_title=0x7f070007;
+        public static final int edit_activity_addit=0x7f070019;
+        public static final int hello=0x7f070000;
+        public static final int hello_world=0x7f070003;
+        public static final int menu_settings=0x7f070004;
+        public static final int title_activity_main=0x7f070005;
+        public static final int title_activity_word_add=0x7f070006;
+        public static final int title_activity_word_display=0x7f070017;
+        public static final int title_activity_word_edit=0x7f070018;
     }
     public static final class style {
-        public static final int ActionBar=0x7f070000;
-        public static final int ActionBarHomeItem=0x7f070002;
-        public static final int ActionBarHomeLogo=0x7f070003;
-        public static final int ActionBarItem=0x7f070001;
-        public static final int ActionBarProgressBar=0x7f070004;
-        public static final int AppTheme=0x7f070005;
+        public static final int ActionBar=0x7f080000;
+        public static final int ActionBarHomeItem=0x7f080002;
+        public static final int ActionBarHomeLogo=0x7f080003;
+        public static final int ActionBarItem=0x7f080001;
+        public static final int ActionBarProgressBar=0x7f080004;
+        public static final int AppTheme=0x7f080005;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -125,7 +202,7 @@ containing a value of this type.
            @see #ActionBar_title
          */
         public static final int[] ActionBar = {
-            0x7f010000
+            0x7f010005
         };
         /**
           <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#title}
@@ -141,5 +218,104 @@ containing a value of this type.
           @attr name android:title
         */
         public static final int ActionBar_title = 0;
+        /** Attributes that can be used with a TouchListView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #TouchListView_dragndrop_background com.hiorion.word.ever:dragndrop_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #TouchListView_expanded_height com.hiorion.word.ever:expanded_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #TouchListView_grabber com.hiorion.word.ever:grabber}</code></td><td></td></tr>
+           <tr><td><code>{@link #TouchListView_normal_height com.hiorion.word.ever:normal_height}</code></td><td></td></tr>
+           <tr><td><code>{@link #TouchListView_remove_mode com.hiorion.word.ever:remove_mode}</code></td><td></td></tr>
+           </table>
+           @see #TouchListView_dragndrop_background
+           @see #TouchListView_expanded_height
+           @see #TouchListView_grabber
+           @see #TouchListView_normal_height
+           @see #TouchListView_remove_mode
+         */
+        public static final int[] TouchListView = {
+            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
+            0x7f010004
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#dragndrop_background}
+          attribute's value can be found in the {@link #TouchListView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:dragndrop_background
+        */
+        public static final int TouchListView_dragndrop_background = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#expanded_height}
+          attribute's value can be found in the {@link #TouchListView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:expanded_height
+        */
+        public static final int TouchListView_expanded_height = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#grabber}
+          attribute's value can be found in the {@link #TouchListView} array.
+
+
+          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
+or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
+          @attr name android:grabber
+        */
+        public static final int TouchListView_grabber = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#normal_height}
+          attribute's value can be found in the {@link #TouchListView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name android:normal_height
+        */
+        public static final int TouchListView_normal_height = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#remove_mode}
+          attribute's value can be found in the {@link #TouchListView} array.
+
+
+          <p>Must be one of the following constant values.</p>
+<table>
+<colgroup align="left" />
+<colgroup align="left" />
+<colgroup align="left" />
+<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
+<tr><td><code>none</code></td><td>-1</td><td></td></tr>
+<tr><td><code>fling</code></td><td>0</td><td></td></tr>
+<tr><td><code>slide</code></td><td>1</td><td></td></tr>
+<tr><td><code>slideRight</code></td><td>1</td><td></td></tr>
+<tr><td><code>slideLeft</code></td><td>2</td><td></td></tr>
+</table>
+          @attr name android:remove_mode
+        */
+        public static final int TouchListView_remove_mode = 4;
     };
 }

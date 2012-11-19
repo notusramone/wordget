@@ -23,11 +23,15 @@
         <activity
             android:name=".WordAddActivity"
             android:label="@string/title_activity_word_add" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        </activity>
+        <activity
+            android:name=".WordDisplayActivity"
+            android:label="@string/title_activity_word_display" >
+        </activity>
+        <activity
+            android:name=".WordEditActivity"
+            android:label="@string/title_activity_word_edit" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

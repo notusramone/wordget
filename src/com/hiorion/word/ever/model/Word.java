@@ -1,14 +1,14 @@
 package com.hiorion.word.ever.model;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Word {
 
 	public long id;
 	public String word;
-	public int library_id;
-	public int category_id;
-	public String ogsource;
+	public long library_id;
+
 	public String ogsentence;
 	public String ogsourcephoto;
 	public Date date;
@@ -17,4 +17,6 @@ public class Word {
 	public int year;
 	public String meaning;
 	public String extrainfo;
+	
+	public ArrayList<Example> examples=new ArrayList<Example>();
 }

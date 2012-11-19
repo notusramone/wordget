@@ -7,11 +7,15 @@
 	<com.markupartist.android.widget.ActionBar
         android:id="@+id/actionbar"
         style="@style/ActionBar"
-        />
+    />
+	
 
+ 
 	<ListView
         android:id="@+id/wordlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
-    </ListView>
+    </ListView> 
+    
+    
 </LinearLayout>

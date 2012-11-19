@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package com.markupartist.android.widget.actionbar;
+package com.commonsware.cwac.tlv;
 
 public final class R {
     public static final class attr {
