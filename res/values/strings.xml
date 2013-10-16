@@ -1,13 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">WordEver</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="app_name">wordget</string>
+    <string name="hello_world">welcome back, candidate :)</string>
     <string name="menu_settings">Settings</string>
-    <string name="title_activity_main">WordEver</string>
+    <string name="hello_lib">Add a library or Sync your vocabulary</string>
+    <string name="title_activity_main">wordget</string>
     <string name="title_activity_word_add">Add a Word</string>
-    <string name="delete_alert_title">action</string>
-    <string name="delete_alert_confirm">delete?</string>
-    <string name="delete_alert_cancel">cancel?</string>
+    <string name="title_activity_settings">Setting</string>
+    <string name="delete_alert_title">Delete A Word</string>
+    <string name="delete_lib_alert_title">Delete A Library</string>
+    <string name="clear_alert_title">check all words?</string>
+    <string name="delete_alert_confirm">Yes</string>
+    <string name="delete_alert_cancel">Cancel</string>
+    <string name="copied_alert_title">Copied to Clipboard</string>
+    <string name="copied_alert_confirm">Cool</string>
     <string name="add_activity_theword">The Word</string>
     <string name="add_activity_theword_hint"></string>
     <string name="add_activity_meaning">Meaning</string>
@@ -23,7 +30,78 @@
     <string name="add_activity_extrainfo_hint"></string>
     <string name="title_activity_word_display">WordDisplayActivity</string>
     <string name="title_activity_word_edit">WordEditActivity</string>
-    
     <string name="edit_activity_addit">Update</string>
+    <string name="optmenu_about">Setting</string>
+    <string name="optmenu_libmgn">Manage Library</string>
+      <string name="optmenu_sync">Sync with Dropbox</string>
+    <string name="lib_notset">Not Set</string>
+    <string name="libmgn_tip">Library could be a book, magazines and other stuff you read frequently. Simple use "daily reading" to kick start!</string>
+    <string name="libmgn_txthint">Library Name</string>
+    <string name="dialog_calendar_btn">Go</string>
+    <string name="dialog_calendar_info">Choose date range: </string>
+    <string name="dialog_search_hint">keyword</string>
+    <string name="dialog_lib_desc">Choose a library: </string>
+    <string name="dropbox_tip">Do you have a Dropbox account?</string>
+    <string name="dropbox_connect">Connect to Dropbox to Sync words</string>
+    <string name="dropbox_unlink">Unlink from Dropbox</string>
+    <string name="dropbox_restore">Resotre from Dropbox</string>
+    <string name="dropbox_alert_restore">This will delete the current data and restore from Dropbox</string>
+    <string name="dropbox_alert_sync">This will update the current data to Dropbox</string>
+    <string name="actionbar_title_displayword">long press to copy, swipe on the word to change</string>
+    <string name="actionbar_title_addword">be patient :) you are learning from typing</string>
+    <string name="actionbar_title_editword">can you remember all examples?</string>
+    <string name="actionbar_title_main">All Words</string>
+    <string name="actionbar_title_libmgn">got a new book? glad to see you here</string>
+    <string name="actionbar_title_synccomplete">sync complete</string>
+    <string name="actionbar_title_syncstart">syncing</string>
+    <string name="actionbar_title_syncstop">sync stopped</string>
+    <string name="actionbar_title_setting">Setting</string>
+    <string name="popup_sync_ok">Successfully Synced with Dropbox</string>
+    <string name="popup_sync_networkerror">Network error.  Try again.</string>
+    <string name="popup_sync_dropboxerror">Dropbox error.  Try again.</string>
+    <string name="popup_sync_unknown">Unknown error.  Try again.</string>
+    <string name="popup_sync_inuse">Other user is syncing data, please wait</string>
+    <string name="popup_sync_authfailed">This app was not authenticated properly</string>
+    <string name="popup_sync_toobig">This file is too big to upload</string>
+    <string name="popup_sync_userauthfailed">Session timeout. Please re-login to Dropbox.</string>
+    <string name="popup_sync_cancel">Upload canceled</string>
+    <string name="popup_sync_forbidden">Could not access Dropbox file. Please check your Dropbox setting.</string>
+    <string name="popup_sync_start">Sync with Dropbox started</string>
+    <string name="popup_email_noclient">There is no email clients installed.</string>
+    <string name="display_copy"> copied!</string>
+    <string name="display_copy_example">examples are </string>
+    <string name="display_copy_meaning">the meaing is </string>
+    <string name="display_copy_og">the original sentence is </string>
+    <string name="popup_add_fillvalues">to make a useful dictionary, every word deserves full context :)</string>
+    <string name="about">null</string>
+    <string name="about_prepare_speech_engine">null    </string>
+    <string name="setting_bugreport">Bug report or Suggestion</string>
+    <string name="setting_about">About this App.</string>
+    <string name="setting_speech">How To (Speech,Phonetic...)</string>
+     <string name="setting_hiorion">Visit Support Website</string>
+
+    <string-array name="calenrange">
+        <item>Exact date</item>
+        <item>In that week</item>
+        <item>In that month</item>
+    </string-array>
+    <string-array name="partsofspeech">
+        <item>n</item>
+        <item>adj</item>
+        <item>v</item>
+        <item>adv</item>
+        <item>prep</item>
+        <item>conj</item>
+        <item>pron</item>
+        <item>other</item>
+    </string-array>
+
+    <string name="title_activity_library_mgn">LibraryMgnActivity</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_pref">Preferences</string>
+    <string name="title_activity_speech">SpeechActivity</string>
+    <string name="title_activity_hello_world">HelloWorldActivity</string>
 
 </resources>

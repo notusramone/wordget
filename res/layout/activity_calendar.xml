@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cate_newcatearea"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:text="@string/dialog_calendar_info" />
+
+ <Spinner
+        android:id="@+id/calen_range"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:entries="@array/calenrange" />
+
+    <DatePicker
+        android:id="@+id/calen_datepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+ <LinearLayout  
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+  android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+
+     </LinearLayout>
+
+</LinearLayout>

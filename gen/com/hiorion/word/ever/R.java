@@ -8,54 +8,11 @@
 package com.hiorion.word.ever;
 
 public final class R {
+    public static final class array {
+        public static final int calenrange=0x7f080000;
+        public static final int partsofspeech=0x7f080001;
+    }
     public static final class attr {
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int dragndrop_background=0x7f010003;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int expanded_height=0x7f010001;
-        /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-         */
-        public static final int grabber=0x7f010002;
-        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int normal_height=0x7f010000;
-        /** <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>none</code></td><td>-1</td><td></td></tr>
-<tr><td><code>fling</code></td><td>0</td><td></td></tr>
-<tr><td><code>slide</code></td><td>1</td><td></td></tr>
-<tr><td><code>slideRight</code></td><td>1</td><td></td></tr>
-<tr><td><code>slideLeft</code></td><td>2</td><td></td></tr>
-</table>
-         */
-        public static final int remove_mode=0x7f010004;
         /** <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
 <p>This may also be a reference to a resource (in the form
 "<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
@@ -63,132 +20,237 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int title=0x7f010005;
+        public static final int act_title=0x7f010000;
     }
     public static final class color {
-        public static final int actionbar_background_end=0x7f050003;
-        public static final int actionbar_background_item_pressed_end=0x7f050005;
-        public static final int actionbar_background_item_pressed_start=0x7f050004;
-        public static final int actionbar_background_start=0x7f050002;
-        public static final int actionbar_separator=0x7f050000;
-        public static final int actionbar_title=0x7f050001;
+        public static final int actionbar_background_end=0x7f040003;
+        public static final int actionbar_background_item_pressed_end=0x7f040005;
+        public static final int actionbar_background_item_pressed_start=0x7f040004;
+        public static final int actionbar_background_start=0x7f040002;
+        public static final int actionbar_separator=0x7f040000;
+        public static final int actionbar_title=0x7f040001;
     }
     public static final class dimen {
-        public static final int actionbar_height=0x7f060000;
-        public static final int actionbar_item_height=0x7f060001;
-        public static final int actionbar_item_width=0x7f060002;
+        public static final int actionbar_height=0x7f050000;
+        public static final int actionbar_item_height=0x7f050001;
+        public static final int actionbar_item_width=0x7f050002;
     }
     public static final class drawable {
-        public static final int actionbar_back_indicator=0x7f020000;
-        public static final int actionbar_background=0x7f020001;
-        public static final int actionbar_btn=0x7f020002;
-        public static final int actionbar_btn_normal=0x7f020003;
-        public static final int actionbar_btn_pressed=0x7f020004;
-        public static final int content_discard=0x7f020005;
-        public static final int content_edit=0x7f020006;
-        public static final int content_new=0x7f020007;
-        public static final int ic_action_search=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int icon=0x7f02000a;
+        public static final int action_search=0x7f020000;
+        public static final int actionbar_back_indicator=0x7f020001;
+        public static final int actionbar_background=0x7f020002;
+        public static final int actionbar_btn=0x7f020003;
+        public static final int actionbar_btn_normal=0x7f020004;
+        public static final int actionbar_btn_pressed=0x7f020005;
+        public static final int av_play_over_video=0x7f020006;
+        public static final int collections_go_to_today=0x7f020007;
+        public static final int collections_labels=0x7f020008;
+        public static final int content_discard=0x7f020009;
+        public static final int content_edit=0x7f02000a;
+        public static final int content_merge=0x7f02000b;
+        public static final int content_new=0x7f02000c;
+        public static final int dropbox_logo=0x7f02000d;
+        public static final int home=0x7f02000e;
+        public static final int ic_action_search=0x7f02000f;
+        public static final int ic_launcher=0x7f020010;
+        public static final int ic_menu_home=0x7f020011;
+        public static final int icon=0x7f020012;
+        public static final int navigation_accept=0x7f020013;
+        public static final int navigation_refresh=0x7f020014;
+        public static final int navigation_refreshing=0x7f020015;
     }
     public static final class id {
-        public static final int ScrollView01=0x7f040011;
-        public static final int actionbar=0x7f04000f;
-        public static final int actionbar_actions=0x7f04000b;
-        public static final int actionbar_home=0x7f040006;
-        public static final int actionbar_home_bg=0x7f040008;
-        public static final int actionbar_home_btn=0x7f040009;
-        public static final int actionbar_home_is_back=0x7f04000a;
-        public static final int actionbar_home_logo=0x7f040007;
-        public static final int actionbar_item=0x7f04000e;
-        public static final int actionbar_progress=0x7f04000c;
-        public static final int actionbar_title=0x7f04000d;
-        public static final int btn_add=0x7f04001e;
-        public static final int dis_tv_example1=0x7f040024;
-        public static final int dis_tv_example2=0x7f040025;
-        public static final int dis_tv_extrainfo=0x7f040023;
-        public static final int dis_tv_library=0x7f040021;
-        public static final int dis_tv_meaning=0x7f040020;
-        public static final int dis_tv_ogsentence=0x7f040022;
-        public static final int dis_tv_word=0x7f04001f;
-        public static final int edit_et_example1=0x7f040029;
-        public static final int edit_et_example2=0x7f04002a;
-        public static final int edit_et_extrainfo=0x7f04002b;
-        public static final int edit_et_meaning=0x7f040027;
-        public static final int edit_et_ogsentence=0x7f040028;
-        public static final int edit_et_word=0x7f040026;
-        public static final int et_example1=0x7f04001b;
-        public static final int et_example2=0x7f04001c;
-        public static final int et_extrainfo=0x7f04001d;
-        public static final int et_meaning=0x7f040015;
-        public static final int et_ogsentence=0x7f040019;
-        public static final int et_word=0x7f040013;
-        public static final int fling=0x7f040001;
-        public static final int menu_settings=0x7f04002d;
-        public static final int none=0x7f040000;
-        public static final int rowTextView=0x7f04002c;
-        public static final int screen=0x7f040005;
-        public static final int slide=0x7f040002;
-        public static final int slideLeft=0x7f040004;
-        public static final int slideRight=0x7f040003;
-        public static final int spin_library=0x7f040017;
-        public static final int textView1=0x7f040012;
-        public static final int textView3=0x7f040018;
-        public static final int textView4=0x7f04001a;
-        public static final int textView5=0x7f040016;
-        public static final int textView6=0x7f040014;
-        public static final int wordlist=0x7f040010;
+        public static final int ScrollView01=0x7f0a000b;
+        public static final int about_tv=0x7f0a000d;
+        public static final int actionbar=0x7f0a000a;
+        public static final int actionbar_actions=0x7f0a0006;
+        public static final int actionbar_home=0x7f0a0001;
+        public static final int actionbar_home_bg=0x7f0a0003;
+        public static final int actionbar_home_btn=0x7f0a0004;
+        public static final int actionbar_home_is_back=0x7f0a0005;
+        public static final int actionbar_home_logo=0x7f0a0002;
+        public static final int actionbar_item=0x7f0a0009;
+        public static final int actionbar_progress=0x7f0a0007;
+        public static final int actionbar_title=0x7f0a0008;
+        public static final int btn_about=0x7f0a001c;
+        public static final int btn_sendmail=0x7f0a001a;
+        public static final int btn_speech=0x7f0a001b;
+        public static final int calen_datepicker=0x7f0a0010;
+        public static final int calen_range=0x7f0a000f;
+        public static final int cate_newcatearea=0x7f0a000e;
+        public static final int dialog_calen_datepicker=0x7f0a0034;
+        public static final int dialog_calen_range=0x7f0a0033;
+        public static final int dialog_library=0x7f0a0035;
+        public static final int dialog_search_keyword=0x7f0a0036;
+        public static final int edit_et_example1=0x7f0a0030;
+        public static final int edit_et_example2=0x7f0a0031;
+        public static final int edit_et_extrainfo=0x7f0a0032;
+        public static final int edit_et_meaning=0x7f0a002d;
+        public static final int edit_et_ogsentence=0x7f0a002f;
+        public static final int edit_et_word=0x7f0a002b;
+        public static final int edit_spin_library=0x7f0a002e;
+        public static final int edit_spin_part=0x7f0a002c;
+        public static final int et_example1=0x7f0a0027;
+        public static final int et_example2=0x7f0a0028;
+        public static final int et_extrainfo=0x7f0a0029;
+        public static final int et_meaning=0x7f0a0021;
+        public static final int et_ogsentence=0x7f0a0025;
+        public static final int et_word=0x7f0a001e;
+        public static final int hello_btn_addlib=0x7f0a0012;
+        public static final int hello_intr=0x7f0a0013;
+        public static final int hello_list=0x7f0a0011;
+        public static final int imageView1=0x7f0a000c;
+        public static final int imageView2=0x7f0a0018;
+        public static final int layout_display=0x7f0a002a;
+        public static final int libmgn_btn=0x7f0a0016;
+        public static final int libmgn_et_name=0x7f0a0015;
+        public static final int libmgn_list=0x7f0a0017;
+        public static final int menu_settings=0x7f0a003b;
+        public static final int op_libraryedit=0x7f0a003c;
+        public static final int op_setting=0x7f0a003d;
+        public static final int row_lib_name=0x7f0a0037;
+        public static final int row_word_meaning=0x7f0a003a;
+        public static final int row_word_separator=0x7f0a0038;
+        public static final int row_word_word=0x7f0a0039;
+        public static final int screen=0x7f0a0000;
+        public static final int setting_cb_dropbox=0x7f0a0019;
+        public static final int speech_text=0x7f0a001d;
+        public static final int spin_library=0x7f0a0023;
+        public static final int spin_part=0x7f0a001f;
+        public static final int textView1=0x7f0a0014;
+        public static final int textView3=0x7f0a0024;
+        public static final int textView4=0x7f0a0026;
+        public static final int textView5=0x7f0a0022;
+        public static final int textView6=0x7f0a0020;
     }
     public static final class layout {
         public static final int actionbar=0x7f030000;
         public static final int actionbar_item=0x7f030001;
-        public static final int activity_main=0x7f030002;
-        public static final int activity_word_add=0x7f030003;
-        public static final int activity_word_display=0x7f030004;
-        public static final int activity_word_edit=0x7f030005;
-        public static final int wordrow=0x7f030006;
+        public static final int activity_about=0x7f030002;
+        public static final int activity_calendar=0x7f030003;
+        public static final int activity_hello_world=0x7f030004;
+        public static final int activity_library_mgn=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int activity_setting=0x7f030007;
+        public static final int activity_speech=0x7f030008;
+        public static final int activity_word_add=0x7f030009;
+        public static final int activity_word_display=0x7f03000a;
+        public static final int activity_word_edit=0x7f03000b;
+        public static final int dialog_calen=0x7f03000c;
+        public static final int dialog_library=0x7f03000d;
+        public static final int dialog_search=0x7f03000e;
+        public static final int librow=0x7f03000f;
+        public static final int wordrow=0x7f030010;
     }
     public static final class menu {
-        public static final int activity_main=0x7f090000;
-        public static final int activity_word_add=0x7f090001;
-        public static final int activity_word_display=0x7f090002;
-        public static final int activity_word_edit=0x7f090003;
+        public static final int activity_about=0x7f090000;
+        public static final int activity_calendar=0x7f090001;
+        public static final int activity_hello_world=0x7f090002;
+        public static final int activity_library_mgn=0x7f090003;
+        public static final int activity_main=0x7f090004;
+        public static final int activity_setting=0x7f090005;
+        public static final int activity_speech=0x7f090006;
+        public static final int activity_word_add=0x7f090007;
+        public static final int activity_word_display=0x7f090008;
+        public static final int activity_word_edit=0x7f090009;
     }
     public static final class string {
-        public static final int actionbar_activity_not_found=0x7f070002;
-        public static final int add_activity_addit=0x7f070014;
-        public static final int add_activity_extrainfo=0x7f070015;
-        public static final int add_activity_extrainfo_hint=0x7f070016;
-        public static final int add_activity_library=0x7f07000e;
-        public static final int add_activity_meaning=0x7f07000c;
-        public static final int add_activity_meaning_hint=0x7f07000d;
-        public static final int add_activity_moreexamples=0x7f070011;
-        public static final int add_activity_moreexamples_hint1=0x7f070012;
-        public static final int add_activity_moreexamples_hint2=0x7f070013;
-        public static final int add_activity_ogsentence=0x7f07000f;
-        public static final int add_activity_ogsentence_hint=0x7f070010;
-        public static final int add_activity_theword=0x7f07000a;
-        public static final int add_activity_theword_hint=0x7f07000b;
-        public static final int app_name=0x7f070001;
-        public static final int delete_alert_cancel=0x7f070009;
-        public static final int delete_alert_confirm=0x7f070008;
-        public static final int delete_alert_title=0x7f070007;
-        public static final int edit_activity_addit=0x7f070019;
-        public static final int hello=0x7f070000;
-        public static final int hello_world=0x7f070003;
-        public static final int menu_settings=0x7f070004;
-        public static final int title_activity_main=0x7f070005;
-        public static final int title_activity_word_add=0x7f070006;
-        public static final int title_activity_word_display=0x7f070017;
-        public static final int title_activity_word_edit=0x7f070018;
+        public static final int about=0x7f06004a;
+        public static final int about_prepare_speech_engine=0x7f06004b;
+        public static final int actionbar_activity_not_found=0x7f060002;
+        public static final int actionbar_title_addword=0x7f060031;
+        public static final int actionbar_title_displayword=0x7f060030;
+        public static final int actionbar_title_editword=0x7f060032;
+        public static final int actionbar_title_libmgn=0x7f060034;
+        public static final int actionbar_title_main=0x7f060033;
+        public static final int actionbar_title_setting=0x7f060038;
+        public static final int actionbar_title_synccomplete=0x7f060035;
+        public static final int actionbar_title_syncstart=0x7f060036;
+        public static final int actionbar_title_syncstop=0x7f060037;
+        public static final int add_activity_addit=0x7f06001a;
+        public static final int add_activity_extrainfo=0x7f06001b;
+        public static final int add_activity_extrainfo_hint=0x7f06001c;
+        public static final int add_activity_library=0x7f060014;
+        public static final int add_activity_meaning=0x7f060012;
+        public static final int add_activity_meaning_hint=0x7f060013;
+        public static final int add_activity_moreexamples=0x7f060017;
+        public static final int add_activity_moreexamples_hint1=0x7f060018;
+        public static final int add_activity_moreexamples_hint2=0x7f060019;
+        public static final int add_activity_ogsentence=0x7f060015;
+        public static final int add_activity_ogsentence_hint=0x7f060016;
+        public static final int add_activity_theword=0x7f060010;
+        public static final int add_activity_theword_hint=0x7f060011;
+        public static final int app_name=0x7f060001;
+        public static final int clear_alert_title=0x7f06000b;
+        public static final int copied_alert_confirm=0x7f06000f;
+        public static final int copied_alert_title=0x7f06000e;
+        public static final int delete_alert_cancel=0x7f06000d;
+        public static final int delete_alert_confirm=0x7f06000c;
+        public static final int delete_alert_title=0x7f060009;
+        public static final int delete_lib_alert_title=0x7f06000a;
+        public static final int dialog_calendar_btn=0x7f060026;
+        public static final int dialog_calendar_info=0x7f060027;
+        public static final int dialog_lib_desc=0x7f060029;
+        public static final int dialog_search_hint=0x7f060028;
+        public static final int display_copy=0x7f060045;
+        public static final int display_copy_example=0x7f060046;
+        public static final int display_copy_meaning=0x7f060047;
+        public static final int display_copy_og=0x7f060048;
+        public static final int dropbox_alert_restore=0x7f06002e;
+        public static final int dropbox_alert_sync=0x7f06002f;
+        public static final int dropbox_connect=0x7f06002b;
+        public static final int dropbox_restore=0x7f06002d;
+        public static final int dropbox_tip=0x7f06002a;
+        public static final int dropbox_unlink=0x7f06002c;
+        public static final int edit_activity_addit=0x7f06001f;
+        public static final int hello=0x7f060000;
+        public static final int hello_lib=0x7f060005;
+        public static final int hello_world=0x7f060003;
+        public static final int lib_notset=0x7f060023;
+        public static final int libmgn_tip=0x7f060024;
+        public static final int libmgn_txthint=0x7f060025;
+        public static final int menu_settings=0x7f060004;
+        public static final int optmenu_about=0x7f060020;
+        public static final int optmenu_libmgn=0x7f060021;
+        public static final int optmenu_sync=0x7f060022;
+        public static final int popup_add_fillvalues=0x7f060049;
+        public static final int popup_email_noclient=0x7f060044;
+        public static final int popup_sync_authfailed=0x7f06003e;
+        public static final int popup_sync_cancel=0x7f060041;
+        public static final int popup_sync_dropboxerror=0x7f06003b;
+        public static final int popup_sync_forbidden=0x7f060042;
+        public static final int popup_sync_inuse=0x7f06003d;
+        public static final int popup_sync_networkerror=0x7f06003a;
+        public static final int popup_sync_ok=0x7f060039;
+        public static final int popup_sync_start=0x7f060043;
+        public static final int popup_sync_toobig=0x7f06003f;
+        public static final int popup_sync_unknown=0x7f06003c;
+        public static final int popup_sync_userauthfailed=0x7f060040;
+        public static final int setting_about=0x7f06004d;
+        public static final int setting_bugreport=0x7f06004c;
+        public static final int setting_hiorion=0x7f06004f;
+        public static final int setting_speech=0x7f06004e;
+        public static final int title_activity_about=0x7f060051;
+        public static final int title_activity_calendar=0x7f060052;
+        public static final int title_activity_hello_world=0x7f060056;
+        public static final int title_activity_library_mgn=0x7f060050;
+        public static final int title_activity_main=0x7f060006;
+        public static final int title_activity_pref=0x7f060054;
+        public static final int title_activity_setting=0x7f060053;
+        public static final int title_activity_settings=0x7f060008;
+        public static final int title_activity_speech=0x7f060055;
+        public static final int title_activity_word_add=0x7f060007;
+        public static final int title_activity_word_display=0x7f06001d;
+        public static final int title_activity_word_edit=0x7f06001e;
     }
     public static final class style {
-        public static final int ActionBar=0x7f080000;
-        public static final int ActionBarHomeItem=0x7f080002;
-        public static final int ActionBarHomeLogo=0x7f080003;
-        public static final int ActionBarItem=0x7f080001;
-        public static final int ActionBarProgressBar=0x7f080004;
-        public static final int AppTheme=0x7f080005;
+        public static final int ActionBar=0x7f070000;
+        public static final int ActionBarHomeItem=0x7f070002;
+        public static final int ActionBarHomeLogo=0x7f070003;
+        public static final int ActionBarItem=0x7f070001;
+        public static final int ActionBarProgressBar=0x7f070004;
+        public static final int AppTheme=0x7f070005;
+        public static final int myd=0x7f070006;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.
@@ -197,15 +259,15 @@ containing a value of this type.
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #ActionBar_title com.hiorion.word.ever:title}</code></td><td></td></tr>
+           <tr><td><code>{@link #ActionBar_act_title com.hiorion.word.ever:act_title}</code></td><td></td></tr>
            </table>
-           @see #ActionBar_title
+           @see #ActionBar_act_title
          */
         public static final int[] ActionBar = {
-            0x7f010005
+            0x7f010000
         };
         /**
-          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#title}
+          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#act_title}
           attribute's value can be found in the {@link #ActionBar} array.
 
 
@@ -215,107 +277,8 @@ containing a value of this type.
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name android:title
+          @attr name android:act_title
         */
-        public static final int ActionBar_title = 0;
-        /** Attributes that can be used with a TouchListView.
-           <p>Includes the following attributes:</p>
-           <table>
-           <colgroup align="left" />
-           <colgroup align="left" />
-           <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #TouchListView_dragndrop_background com.hiorion.word.ever:dragndrop_background}</code></td><td></td></tr>
-           <tr><td><code>{@link #TouchListView_expanded_height com.hiorion.word.ever:expanded_height}</code></td><td></td></tr>
-           <tr><td><code>{@link #TouchListView_grabber com.hiorion.word.ever:grabber}</code></td><td></td></tr>
-           <tr><td><code>{@link #TouchListView_normal_height com.hiorion.word.ever:normal_height}</code></td><td></td></tr>
-           <tr><td><code>{@link #TouchListView_remove_mode com.hiorion.word.ever:remove_mode}</code></td><td></td></tr>
-           </table>
-           @see #TouchListView_dragndrop_background
-           @see #TouchListView_expanded_height
-           @see #TouchListView_grabber
-           @see #TouchListView_normal_height
-           @see #TouchListView_remove_mode
-         */
-        public static final int[] TouchListView = {
-            0x7f010000, 0x7f010001, 0x7f010002, 0x7f010003,
-            0x7f010004
-        };
-        /**
-          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#dragndrop_background}
-          attribute's value can be found in the {@link #TouchListView} array.
-
-
-          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name android:dragndrop_background
-        */
-        public static final int TouchListView_dragndrop_background = 3;
-        /**
-          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#expanded_height}
-          attribute's value can be found in the {@link #TouchListView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name android:expanded_height
-        */
-        public static final int TouchListView_expanded_height = 1;
-        /**
-          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#grabber}
-          attribute's value can be found in the {@link #TouchListView} array.
-
-
-          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
-or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
-          @attr name android:grabber
-        */
-        public static final int TouchListView_grabber = 2;
-        /**
-          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#normal_height}
-          attribute's value can be found in the {@link #TouchListView} array.
-
-
-          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
-Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
-in (inches), mm (millimeters).
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name android:normal_height
-        */
-        public static final int TouchListView_normal_height = 0;
-        /**
-          <p>This symbol is the offset where the {@link com.hiorion.word.ever.R.attr#remove_mode}
-          attribute's value can be found in the {@link #TouchListView} array.
-
-
-          <p>Must be one of the following constant values.</p>
-<table>
-<colgroup align="left" />
-<colgroup align="left" />
-<colgroup align="left" />
-<tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-<tr><td><code>none</code></td><td>-1</td><td></td></tr>
-<tr><td><code>fling</code></td><td>0</td><td></td></tr>
-<tr><td><code>slide</code></td><td>1</td><td></td></tr>
-<tr><td><code>slideRight</code></td><td>1</td><td></td></tr>
-<tr><td><code>slideLeft</code></td><td>2</td><td></td></tr>
-</table>
-          @attr name android:remove_mode
-        */
-        public static final int TouchListView_remove_mode = 4;
+        public static final int ActionBar_act_title = 0;
     };
 }

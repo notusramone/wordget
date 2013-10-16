@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  
+    android:orientation="vertical"
+    >
+	
+	
+	<com.markupartist.android.widget.ActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar"
+    />
+	
+	<ListView
+        android:id="@+id/hello_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+    
+	<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  
+    android:layout_margin="20dp"
+    >
+	  <Button
+                android:id="@+id/hello_btn_addlib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hello_lib" 
+                android:onClick="gotolib"
+               />
+	  
+    <TextView
+        android:id="@+id/hello_intr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"             
+        android:text="@string/about" />
+	</LinearLayout>
+    
+</LinearLayout>

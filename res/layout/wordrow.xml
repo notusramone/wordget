@@ -1,8 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
- android:id="@+id/rowTextView" 
- android:layout_width="fill_parent" 
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+ 
+<TextView 
+ android:id="@+id/row_word_separator" 
+ android:layout_width="match_parent" 
  android:layout_height="wrap_content"
  android:padding="10dp"
- android:textSize="16sp" >
+ android:textSize="12sp"
+ android:background="#3e3e3e"
+ android:textColor="#ffffff">
 </TextView>
+
+<TextView 
+ android:id="@+id/row_word_word" 
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+ android:paddingBottom="3dp"
+ android:paddingLeft="6dp"
+ android:paddingTop="6dp"
+ android:textSize="16sp" 
+ android:textColor="#000000">
+</TextView>
+<TextView 
+ android:id="@+id/row_word_meaning" 
+ android:layout_width="wrap_content" 
+ android:layout_height="wrap_content"
+ android:paddingBottom="10dp"
+ android:paddingLeft="6dp"
+ android:textSize="12sp" 
+ android:textColor="#aaaaaa">
+</TextView>
+
+
+</LinearLayout>

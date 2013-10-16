@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+      
+    <com.markupartist.android.widget.ActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar" />
+    
     <ScrollView android:id="@+id/ScrollView01"
 android:layout_width="fill_parent"
 android:layout_height="fill_parent">
@@ -11,11 +16,12 @@ android:layout_height="fill_parent">
         <LinearLayout 
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
     
-    <com.markupartist.android.widget.ActionBar
-        android:id="@+id/actionbar"
-        style="@style/ActionBar" />
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    >
+  
 
     <TextView
         android:id="@+id/textView1"
@@ -24,15 +30,28 @@ android:layout_height="fill_parent">
         android:text="@string/add_activity_theword"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
+          <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
     <EditText
         android:id="@+id/edit_et_word"
-        android:layout_width="match_parent"
+       android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:ems="10"
         android:hint="@string/add_activity_theword_hint" >
 
-        <requestFocus />
+    
     </EditText>
+     <Spinner
+        android:id="@+id/edit_spin_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+         android:entries="@array/partsofspeech"/>
+     </LinearLayout>
 
     <TextView
         android:id="@+id/textView6"
@@ -56,7 +75,7 @@ android:layout_height="fill_parent">
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Spinner
-        android:id="@+id/spin_library"
+        android:id="@+id/edit_spin_library"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -112,12 +131,6 @@ android:layout_height="fill_parent">
         android:hint="@string/add_activity_extrainfo_hint"
         android:inputType="textMultiLine" />
 
-    <Button
-        android:id="@+id/btn_add"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="edit_act_update"
-        android:text="@string/edit_activity_addit" />
     
     </LinearLayout>
     </ScrollView>

@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  
+
+    > 
+	<com.markupartist.android.widget.ActionBar
+        android:id="@+id/actionbar"
+        style="@style/ActionBar"
+    />
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  
+    android:layout_margin="20dp"
+    >
+
+
+     <ImageView
+         android:id="@+id/imageView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/dropbox_logo"
+          />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/dropbox_tip"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_marginTop="20dp"/>
+
+<CheckBox
+    android:id="@+id/setting_cb_dropbox"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/dropbox_connect" 
+    android:onClick="Setting_Dropbox_click"
+    android:layout_marginTop="20dp"
+    />
+
+
+       <Button
+                android:id="@+id/btn_sendmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_bugreport" 
+                android:onClick="sendEmail"
+                android:layout_marginTop="20dp"/>
+       <Button
+                android:id="@+id/btn_speech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_speech" 
+                android:onClick="preparespeech"
+                android:layout_marginTop="20dp"/>
+          <Button
+                android:id="@+id/btn_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting_about" 
+                android:onClick="about"
+                android:layout_marginTop="20dp"/>
+              
+  
+
+</LinearLayout>
+</LinearLayout>
