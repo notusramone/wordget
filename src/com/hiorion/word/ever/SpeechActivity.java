@@ -37,24 +37,8 @@ public class SpeechActivity extends Activity {
 		fillText();
 	}
 	
-	void fillText(){
-		TextView tv=(TextView) findViewById(R.id.speech_text);
-		tv.setText(Html.fromHtml("<p> <b> Word Navigation</b><br/>When you are on the word viewing page," +
-				" <b>click</b> the word on the top will go to the next word.<br/>" +
-				"<b>swipe</b> on the word from left to right will also present you the next word,<br/>" +
-				"to check the previous one, just <b>swipe </b>on the word from right to left</p>" +
-				"<p><b>How to prepare the speech engine:</b> <br/>"
-				+"<a href=\"http://hiorion.com/?p=30\">click me to read detailed article</a><br/><br/>"
-+"1. Download speech resource \"Longman 2005 Voice Package - American English\" from  <a href=\"http://www.lingoes.net/en/translator/speech.htm\">http://www.lingoes.net/en/translator/speech.htm</a><br/>"
-+"2. Unzip the zip file to your SD card.<br/>"
-+"3. The path of the speech resource should look like that: <br/><br/> SDcard/wordget/speech/A/about.mp3<br/><br/>"
-+"Tip: <br/> How to copy the speech files to your SD card."
-+"Because there are thousands of mp3 files, directly copying the files to your SD card could be a pailful process. " 
-+"I did this by uploading the files to my phone through wifi. " 
-+" To do this, first you have to install a FTP App on your phone, then enable the FTP function and upload the mp3 files to the correct folder" 
-+" of your SD card.</p>"
-    	
-    	+"<p> <b>How to update phonetic:</b><br/><br/>"
+	/*
+	 +"<p> <b>How to update phonetic:</b><br/><br/>"
     	+"<a href=\"http://hiorion.com/?p=32\">click me to read detailed article</a><br/><br/>"
     	+"(Brfore we start: I should develop a Phonetic keyboard so that we can edit phonetic on our lovely androids. But before that, please use this FFX add-on)<br/>"
     	+"1. <a href=\"http://hiorion.com/?p=32\">Download the add-on from my website </a><br/>"
@@ -66,11 +50,26 @@ public class SpeechActivity extends Activity {
     	+"6. (Important!!)After editing, click \"Update Phonetic\" <br/>"
     	+"7. Copy the data file back to the Dropbox folder.<br/>"
     	+"8. Sync the word on your phone. </p>"
+	 */
+	void fillText(){
+		TextView tv=(TextView) findViewById(R.id.speech_text);
+		tv.setText(Html.fromHtml("<p> <b> Word Navigation</b><br/>When you are on the word viewing page," +
+				" <b>click</b> the word on the top will go to the next word.<br/>" +
+				"<b>swipe</b> on the word from left to right will also present you the next word,<br/>" +
+				"to check the previous one, just <b>swipe </b>on the word from right to left</p>" +
+				"<p><b>How to prepare the speech engine:</b> <br/>"
++"1. Download speech resource \"Longman 2005 Voice Package - American English\" from  <a href=\"http://www.lingoes.net/en/translator/speech.htm\">http://www.lingoes.net/en/translator/speech.htm</a><br/>"
++"2. Unzip the zip file to your SD card.<br/>"
++"3. The path of the speech resource should look like that: <br/><br/> SDcard/wordget/speech/A/about.mp3<br/><br/>"
++"Tip: <br/> How to copy the speech files to your SD card."
++"Because there are thousands of mp3 files, directly copying the files to your SD card could be a pailful process. " 
++"I did this by uploading the files to my phone through wifi. " 
++" To do this, first you have to install a FTP App on your phone, then enable the FTP function and upload the mp3 files to the correct folder" 
++" of your SD card.</p>"
     	
     	+"<p> <b> Typing on Androids.</b> <br/><br/>"
-    	+"<a href=\"http://hiorion.com/?p=34\">click me to read detailed article</a><br/><br/>"
     	+"Typing could be painful, especially when your phones screen is not big. If you feel bad about this, I personal recommend SwiftKey keyboard. <br/>"
-    	+"It is just awesome :) I have purchased it, but now I am usng Swiftkey Flow, a free beta app. By using Flow, typing becomes much faster! <br/>"
+    	+"It is just awesome :) I have purchased it. By using Flow, typing becomes much faster! <br/>"
     	+"Well this is not an advertisement. Try the free beta or trial version, you will fall in love with it."
     	+"</p>"));
 		tv.setMovementMethod(LinkMovementMethod.getInstance());

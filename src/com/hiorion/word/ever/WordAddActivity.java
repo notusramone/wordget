@@ -3,7 +3,10 @@ package com.hiorion.word.ever;
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
+import android.media.AudioManager;
+import android.media.SoundPool;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -16,6 +19,7 @@ import android.widget.EditText;
 import android.widget.SimpleCursorAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
+
 
 import com.hiorion.word.ever.db.DBHelper;
 import com.hiorion.word.ever.db.LibraryAccess;
@@ -44,6 +48,8 @@ public class WordAddActivity extends Activity {
 	EditText et_example1 = null;
 	EditText et_example2 = null;
 	EditText et_extrainfo = null;
+	SoundPool sp=null;
+	int spid=0;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -55,7 +61,7 @@ public class WordAddActivity extends Activity {
 		// set action bar title
 		final ActionBar actionBar = (ActionBar) findViewById(R.id.actionbar);
 		actionBar.setTitle(R.string.actionbar_title_addword);
-
+		actionBar.addAction(new PlayAction());
 		actionBar.addAction(new Action() {
 
 			public int getDrawable() {
@@ -69,6 +75,43 @@ public class WordAddActivity extends Activity {
 
 		});
 		// *************Action Bar
+	}
+	
+	private class PlayAction implements Action {
+
+		@Override
+		public int getDrawable() {
+			return R.drawable.av_play_over_video;
+		}
+
+		@Override
+		public void performAction(View view) {
+			EditText et_word = (EditText) findViewById(R.id.et_word);
+			if (et_word.getText().toString().trim().length() > 0){
+				String word_str=et_word.getText().toString().trim();
+				sp=new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+				String prefix=word_str.substring(0, 1);
+				sp.setOnLoadCompleteListener(new soundready());
+				String path=Keys.FolderLocalAppSpeech+"/"+prefix+"/"+word_str+".mp3";
+				try{
+					spid=sp.load(path, 1);				
+				}
+				catch(Exception e){
+					Log.e(Keys.LogTag,"no such audio file");
+				}
+			} 
+			
+		}
+
+	}
+	private class soundready implements SoundPool.OnLoadCompleteListener{
+
+		@Override
+		public void onLoadComplete(SoundPool soundPool, int sampleId, int status) {
+			sp.play(spid, 1, 1, 0, 0, 1);
+			
+		}
+		
 	}
 
 	@Override
@@ -242,8 +285,7 @@ public class WordAddActivity extends Activity {
 
 			finish();
 			
-			startActivity(new Intent(this,
-					MainActivity.class));
+			//startActivity(new Intent(this,MainActivity.class));
 		}
 	}
 }
