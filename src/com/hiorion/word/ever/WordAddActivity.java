@@ -65,6 +65,18 @@ public class WordAddActivity extends Activity {
 		actionBar.addAction(new Action() {
 
 			public int getDrawable() {
+				return R.drawable.content_new;
+			}
+
+			public void performAction(View view) {
+				add_act_continue_insert(view);
+
+			}
+
+		});
+		actionBar.addAction(new Action() {
+
+			public int getDrawable() {
 				return R.drawable.navigation_accept;
 			}
 
@@ -134,7 +146,7 @@ public class WordAddActivity extends Activity {
 					android.R.layout.simple_spinner_dropdown_item, cursor,
 					froms, tos);
 			ada.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-			spinner_lib = (Spinner) findViewById(R.id.spin_library);
+			spinner_lib = (Spinner) findViewById(R.id.spin_lib);
 			spinner_lib.setAdapter(ada);
 			if (lib_selected > 0)
 				spinner_lib.setSelection(lib_selected);
@@ -238,6 +250,55 @@ public class WordAddActivity extends Activity {
 		Toast error = Toast.makeText(this, msg, Toast.LENGTH_LONG);
 		error.show();
 	}
+	public void add_act_continue_insert(View view) {
+
+		EditText et_word = (EditText) findViewById(R.id.et_word);
+		if (et_word.getText().toString().trim().length() == 0)
+			return;
+		et_ogsentence = (EditText) findViewById(R.id.et_ogsentence);
+		et_meaning = (EditText) findViewById(R.id.et_meaning);
+		et_example1 = (EditText) findViewById(R.id.et_example1);
+		et_example2 = (EditText) findViewById(R.id.et_example2);
+		et_extrainfo = (EditText) findViewById(R.id.et_extrainfo);
+		spinner_lib = (Spinner) findViewById(R.id.spin_lib);
+		spinner_part = (Spinner) findViewById(R.id.spin_part);
+
+		if (et_word.getText().toString().trim().length() == 0) {
+			showToast(this.getString(R.string.popup_add_fillvalues));
+		} else {
+			WordAccess dba = new WordAccess(this);
+			try {
+				dba.OpenConnectionForWriting();
+				Word word = new Word();
+				word.meaning = et_meaning.getText().toString();
+				word.ogsentence = et_ogsentence.getText().toString();
+				word.word = et_word.getText().toString();
+				word.ogsourcephoto = "";
+				word.extrainfo = et_extrainfo.getText().toString();
+				word.part = spinner_part.getSelectedItemPosition() + 1;
+				// librar
+				long libid = spinner_lib.getSelectedItemId();
+				LibraryAccess la = new LibraryAccess(this);
+				la.OpenConnectionForRead();
+				String lib_uuid = la.GetALibrary(libid).uuid;
+				la.Close();
+				word.library_uuid = lib_uuid;
+				Example ex1 = new Example();
+				ex1.sentence = et_example1.getText().toString();
+				Example ex2 = new Example();
+				ex2.sentence = et_example2.getText().toString();
+				word.examples.add(ex1);
+				word.examples.add(ex2);
+				dba.Insert(word);
+			} finally {
+				dba.Close();
+			}
+
+			finish();
+			
+			startActivity(new Intent(this,WordAddActivity.class));
+		}
+	}
 
 	public void add_act_insert(View view) {
 
@@ -249,7 +310,7 @@ public class WordAddActivity extends Activity {
 		et_example1 = (EditText) findViewById(R.id.et_example1);
 		et_example2 = (EditText) findViewById(R.id.et_example2);
 		et_extrainfo = (EditText) findViewById(R.id.et_extrainfo);
-		spinner_lib = (Spinner) findViewById(R.id.spin_library);
+		spinner_lib = (Spinner) findViewById(R.id.spin_lib);
 		spinner_part = (Spinner) findViewById(R.id.spin_part);
 
 		if (et_word.getText().toString().trim().length() == 0) {

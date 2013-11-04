@@ -47,7 +47,7 @@
     <string name="dropbox_restore">Resotre from Dropbox</string>
     <string name="dropbox_alert_restore">This will delete the current data and restore from Dropbox</string>
     <string name="dropbox_alert_sync">This will update the current data to Dropbox</string>
-    <string name="actionbar_title_displayword">long press to copy, swipe on the word to change</string>
+    <string name="actionbar_title_displayword">one more word, baby!</string>
     <string name="actionbar_title_addword">be patient :) you are learning from typing</string>
     <string name="actionbar_title_editword">can you remember all examples?</string>
     <string name="actionbar_title_main">All Words</string>

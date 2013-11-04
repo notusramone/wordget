@@ -1,5 +1,6 @@
 package com.hiorion.word.ever;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
@@ -31,6 +32,7 @@ import android.view.View.OnClickListener;
 import android.view.View.OnLongClickListener;
 
 import android.view.Window;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -91,7 +93,7 @@ public class WordDisplayActivity extends Activity   implements OnClickListener{
 				R.drawable.content_edit);
 		actionBar.addAction(editAction);
 		actionBar.addAction(new InsertWordAction());
-		actionBar.addAction(new PlayAction());
+		//actionBar.addAction(new PlayAction());
 		
 		// ************Action Bar
 		
@@ -210,6 +212,38 @@ public class WordDisplayActivity extends Activity   implements OnClickListener{
 
 			ll.addView(tv1);
 		}
+		//a new speech button
+		Button bt_speech=new Button(this);
+		bt_speech.setText("*^_^*");
+		bt_speech.setPadding(pix(10), pix(15), pix(10), pix(15));
+		bt_speech.setGravity(Gravity.CENTER);
+		bt_speech.setTextSize(16);
+		final Context ctx_s=this;
+		bt_speech.setOnClickListener(new OnClickListener()
+	    {
+	        @Override
+	        public void onClick(View v)
+	        {
+	        	sp=new SoundPool(1,AudioManager.STREAM_MUSIC,0);
+				String prefix=word_str.substring(0, 1);
+				sp.setOnLoadCompleteListener(new soundready());
+				String path=Keys.FolderLocalAppSpeech+"/"+prefix+"/"+word_str.trim()+".mp3";
+				File audio=new File(path);
+				if(audio.exists()){
+					spid=sp.load(path, 1);
+				}
+				else{
+					AlertDialog.Builder dialog = new AlertDialog.Builder(ctx_s);
+					dialog.setIcon(R.drawable.content_discard);
+					dialog.setMessage("You just tapped a Speech button but the audio file is missing. [find how to speech in Setting.]");
+
+					dialog.setNegativeButton(R.string.copied_alert_confirm, null);
+					dialog.show();
+				}
+				
+	        }
+	    });
+		ll.addView(bt_speech);
 		// library
 		LibraryAccess la = new LibraryAccess(this);
 		Library lib = null;
@@ -327,7 +361,6 @@ public class WordDisplayActivity extends Activity   implements OnClickListener{
 
 	}
 
-	
 	//gesture detector
 	class MyGestureDetector extends SimpleOnGestureListener {
         @Override
